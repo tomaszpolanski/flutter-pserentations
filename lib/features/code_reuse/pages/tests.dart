@@ -108,7 +108,8 @@ class _TestsState extends State<Tests> {
                 .toList(),
           ),
           TableRow(
-            key: const Key('confidence') as LocalKey?,
+            // ignore: avoid_as
+            key: const ValueKey('confidence'),
             decoration: BoxDecoration(
               color: Colors.grey.withOpacity(0.2),
             ),
@@ -125,7 +126,7 @@ class _TestsState extends State<Tests> {
                 .toList(),
           ),
           TableRow(
-            key: const Key('cost') as LocalKey?,
+            key: const ValueKey('cost'),
             children: [
               Text('Maintenance', style: description),
               Text('Low', style: good),
@@ -139,7 +140,7 @@ class _TestsState extends State<Tests> {
                 .toList(),
           ),
           TableRow(
-            key: const Key('speed') as LocalKey?,
+            key: const ValueKey('speed'),
             decoration: BoxDecoration(
               color: Colors.grey.withOpacity(0.2),
             ),
